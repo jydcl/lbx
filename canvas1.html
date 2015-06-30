@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>canvas基本图形1</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="reset.css">
+</head>
+<body>
+	<canvas id="canvas" width="800" height="400" style="border:1px solid red"></canvas>
+</body>
+<script>
+window.onload=function (){
+	var cvs=document.getElementById('canvas');//获取canvas元素
+	var ctx=cvs.getContext('2d');//获取Context的对象
+
+	/*ctx.beginPath();//开始画图
+	ctx.moveTo(100,50);//起点位置x=100 y=50
+	ctx.lineTo(500,50);//定点，画线
+	ctx.lineTo(300,300);//定点，画线
+	// ctx.lineTo(100,50);//定点，画线
+	ctx.closePath();//结束绘制，'自动与起点直线闭合'
+	// ctx.fillStyle='red';//填充样式：红色
+	// ctx.fill();//进行填充
+	ctx.lineWidth=5;//绘制线宽5px
+	ctx.strokeStyle='red';//绘制样式：红色
+	ctx.stroke();//进行绘制
+	// ctx.closePath();//结束画图*/
+
+	/*ctx.beginPath();//开始画图
+	ctx.moveTo(100,50);//起点位置x=100 y=50
+	ctx.lineTo(500,50);//定点，画线
+	ctx.lineTo(500,250);//定点，画线
+	ctx.lineTo(100,250);//定点，画线
+	ctx.closePath();//结束绘制'自动与起点直线闭合'
+	ctx.fillStyle='#ccc';//填充样式：红色
+	ctx.fill();//进行填充
+	ctx.lineWidth=4;//绘制线宽4px
+	ctx.strokeStyle='#666';//绘制样式：红色
+	ctx.stroke();//进行绘制*/
+
+	/*ctx.beginPath();//开始画图
+	ctx.rect(100,50,400,200);//矩形起点100,50 宽400 高200
+	ctx.fillStyle='#ccc';//填充颜色
+	ctx.fill();//进行填充
+	ctx.lineWidth=4;//线宽
+	ctx.strokeStyle='#666';//线的颜色
+	ctx.stroke();//描边
+	ctx.closePath();//结束画图*/
+
+	/*ctx.beginPath();//开始画图
+	//圆心400,200 半径100 360° 顺时针
+	ctx.arc(400,200,100,0,2*Math.PI,false);
+	ctx.fillStyle='red';//填充颜色
+	ctx.fill();//进行填充
+	ctx.closePath();//结束画图*/
+
+	/*ctx.beginPath();//开始画图
+	ctx.moveTo(137,157);//起点位置
+	ctx.quadraticCurveTo(195,84,310,206);//二次贝塞尔曲线
+	ctx.lineWidth=5;//线宽
+	ctx.stroke();//绘制
+	ctx.closePath();//结束画图*/
+
+	/*ctx.beginPath();//开始画图
+	ctx.moveTo(119,182);//起点位置
+	ctx.bezierCurveTo(185,100,290,143,260,252);//二次贝塞尔曲线
+	ctx.lineWidth=5;//线宽
+	ctx.stroke();//绘制
+	ctx.closePath();//结束画图*/
+
+	/*ctx.beginPath();//开始画图
+	ctx.font = 'bold 80px 微软雅黑';//设置字体样式
+	ctx.fillStyle = "red"; //填充颜色
+	ctx.fillText("hello word", 70, 100);//填充文字
+	ctx.strokeStyle = 'blue';//描边颜色
+	ctx.strokeText("hello word", 70, 200);//绘制文字
+	ctx.closePath();//结束画图*/
+}
+</script>
+</html>
